@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aryan's Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            --primary-color: #ffffff;
+            --secondary-color: #ffffff;
+            --background-color: #000000;
+            background-color: var(--background-color);
+        }
+        
+        /* Header with its own background image */
+        header {
+            background-image: url('Header-image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative; /* Allows positioning the logo */
+        }
+
+        /* Logo in the top-left corner */
+        .logo {
+            width: 100px;
+            height: auto;
+            position: absolute;
+            top: 20px; /* Adjust as needed */
+            left: 20px; /* Adjust as needed */
+        }
+        
+        /* Profile picture in the center, circular */
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes the image a circle */
+            object-fit: cover; /* Ensures the image is properly cropped inside the circle */
+            display: block;
+            margin: 0 auto 20px auto; /* Center the profile picture */
+        }
+
+        /* Footer with a different background image */
+        footer {
+            background-image: url('Footer-Image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            padding: 2rem;
+        }
+
+        nav a {
+            color: var(--primary-color);
+        }
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+        h2, h3 {
+            color: var(--secondary-color);
+        }
+        button {
+            background-color: var(--primary-color);
+            color: rgb(0, 0, 0);
+        }
+        button:hover {
+            background-color: #c40606;
+        }
+        figure img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        footer a {
+            color: white;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="container-fluid">
+        <!-- Logo in the top-left corner -->
+        <img src="Assets/Aryan-Logo-new.png" alt="Aryan's Logo" class="logo">
+
+        <!-- Profile Picture in the center -->
+        <img src="Assets/Portrait-Aryan.png" alt="Profile Picture" class="profile-picture"> <!-- Replace with your actual profile image URL -->
+
+        <h1>Aryan Patel</h1>
+        <p>Developer & Designer</p>
+    </header>
+    <nav class="container-fluid">
+        <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section>
+            <hgroup>
+                <h2>Welcome to Aryan's Portfolio</h2>
+                <h3>Web & Mobile Developer, Graphic Designer, and Video Editor</h3>
+            </hgroup>
+            <p>I am a versatile developer and designer skilled in Python, C++, Java, and web development. With expertise in graphic design and video editing using tools like Photoshop, Illustrator, Premiere Pro, and After Effects, I showcase a unique blend of front-end development and creative design skills. Passionate about technology and visual arts, my portfolio highlights frontend, graphic design, and video editing projects.</p>
+        </section>
+        <section id="skills">
+            <hgroup>
+                <h2>Skills</h2>
+                <h3>Development & Design</h3>
+            </hgroup>
+            <ul>
+                <li>Python</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>HTML & CSS</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Premiere Pro</li>
+                <li>After Effects</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <hgroup>
+                <h2>Projects</h2>
+                <h3>Graphic Design & Video Editing</h3>
+            </hgroup>
+            <p>Explore some of my work in software development, graphic design, and video editing below.</p>
+            <div class="grid">
+                <figure>
+                    <img src="Assets/solidpixels-TCBw4jAIJDY-unsplash.jpg" alt="Software/Front-End Projects">
+                    <figcaption><a href="software-projects.html">Software Development Projects</a></figcaption> <!-- Removed target="_blank" -->
+                </figure>
+                <figure>
+                    <img src="Assets/moritz-kindler-xWga0cs8vSk-unsplash.jpg" alt="Graphic Design">
+                    <figcaption><a href="graphic-design.html">Graphic Design Projects</a></figcaption> <!-- Removed target="_blank" -->
+                </figure>
+                <figure>
+                    <img src="Assets/nejc-soklic-2jTu7H9l6JA-unsplash.jpg" alt="Video Editing">
+                    <figcaption><a href="video-editing.html">Video Editing Projects</a></figcaption> <!-- Removed target="_blank" -->
+                </figure>
+            </div>
+        </section>
+        
+    </main>
+    <section id="contact" aria-label="Subscribe example">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Contact Me</h2>
+                    <h3>Get in Touch</h3>
+                </hgroup>
+                <form id="contactForm" class="grid" action="https://formspree.io/f/xovqdqnd" method="POST">
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name" aria-label="First Name" required />
+                    <input type="email" id="email" name="email" placeholder="Email" aria-label="Email" required />
+                    <textarea id="message" name="message" placeholder="Your message" aria-label="Message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="form-status"></p>
+            </article>
+        </div>
+    </section>
+    <footer class="container-fluid">
+        <p>&copy; 2024 Aryan's Portfolio</p>
+        <small><a href="#skills">Skills</a> • <a href="#projects">Projects</a> • <a href="#contact">Contact</a></small>
+    </footer>
+</body>
+</html>
