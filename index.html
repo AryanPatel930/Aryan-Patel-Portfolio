@@ -25,7 +25,7 @@
             color: white;
             padding: 2rem;
             text-align: center;
-            position: relative; /* Allows positioning the logo */
+            position: relative; /* Allows positioning the logo and icons */
         }
 
         /* Logo in the top-left corner */
@@ -45,6 +45,24 @@
             object-fit: cover; /* Ensures the image is properly cropped inside the circle */
             display: block;
             margin: 0 auto 20px auto; /* Center the profile picture */
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            position: absolute;
+            top: 20px; /* Adjust as needed */
+            right: 20px; /* Adjust as needed */
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 32px; /* Increased size of the icons */
+            margin: 0 15px; /* Increase space between icons */
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #c40606; /* Change color on hover */
         }
 
         /* Footer with a different background image */
@@ -95,13 +113,15 @@
 
         <h1>Aryan Patel</h1>
         <p>Developer & Designer</p>
+
+        <!-- Social Media Icons in the top-right corner -->
         <div class="social-icons">
             <a href="https://www.instagram.com/aryanpatel9304" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="www.linkedin.com/in/aryan-patel-467a52199" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/aryan-patel-467a52199" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com/aryanpatel930" target="_blank"><i class="fab fa-github"></i></a>
         </div>
-        
     </header>
+    
     <nav class="container-fluid">
         <ul>
             <li><a href="#skills">Skills</a></li>
@@ -109,6 +129,7 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+    
     <main class="container">
         <section>
             <hgroup>
@@ -117,6 +138,7 @@
             </hgroup>
             <p>I am a versatile developer and designer skilled in Python, C++, Java, and web development. With expertise in graphic design and video editing using tools like Photoshop, Illustrator, Premiere Pro, and After Effects, I showcase a unique blend of front-end development and creative design skills. Passionate about technology and visual arts, my portfolio highlights frontend, graphic design, and video editing projects.</p>
         </section>
+        
         <section id="skills">
             <hgroup>
                 <h2>Skills</h2>
@@ -133,6 +155,7 @@
                 <li>After Effects</li>
             </ul>
         </section>
+        
         <section id="projects">
             <hgroup>
                 <h2>Projects</h2>
@@ -142,20 +165,20 @@
             <div class="grid">
                 <figure>
                     <img src="solidpixels-TCBw4jAIJDY-unsplash.jpg" alt="Software/Front-End Projects">
-                    <figcaption><a href="software-projects.html">Software Development Projects</a></figcaption> <!-- Removed target="_blank" -->
+                    <figcaption><a href="software-projects.html">Software Development Projects</a></figcaption>
                 </figure>
                 <figure>
                     <img src="moritz-kindler-xWga0cs8vSk-unsplash.jpg" alt="Graphic Design">
-                    <figcaption><a href="graphic-design.html">Graphic Design Projects</a></figcaption> <!-- Removed target="_blank" -->
+                    <figcaption><a href="graphic-design.html">Graphic Design Projects</a></figcaption>
                 </figure>
                 <figure>
                     <img src="nejc-soklic-2jTu7H9l6JA-unsplash.jpg" alt="Video Editing">
-                    <figcaption><a href="video-editing.html">Video Editing Projects</a></figcaption> <!-- Removed target="_blank" -->
+                    <figcaption><a href="video-editing.html">Video Editing Projects</a></figcaption>
                 </figure>
             </div>
         </section>
-        
     </main>
+    
     <section id="contact" aria-label="Subscribe example">
         <div class="container">
             <article>
@@ -173,10 +196,10 @@
             </article>
         </div>
     </section>
-     <footer class="container-fluid">
+    
+    <footer class="container-fluid">
         <p>&copy; 2024 Aryan's Portfolio</p>
         <small><a href="#skills">Skills</a> • <a href="#projects">Projects</a> • <a href="#contact">Contact</a></small>
     </footer>
-
 </body>
 </html>
