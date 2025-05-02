@@ -5,48 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Editing</title> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-     <link rel="icon" href="Favicon.png" type="image/png">
-    <style>
-        body {
-            background-color: #000000;
-            color: white;
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-
-        /* Styling for videos */
-        .project-grid video, .project-grid iframe {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .project-grid figcaption {
-            margin-top: 0.5rem;
-            text-align: center;
-        }
-        
-        .project-grid a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .project-grid a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/video-editing.css"></link> 
+    <link rel="icon" href="../assets/Favicon.png" type="image/png">
 </head>
 <body>
     <header class="container-fluid">
+        <a href="../index.html"
+            class ="logo-link">
+            <img src="../assets/Aryan-Logo-new.png" alt="Aryan's Logo" class="logo">
+        </a>
         <h1>Video Editing Projects</h1> <!-- Change this to the category name -->
         <p>A collection of my video editing projects.</p>
     </header>
@@ -56,9 +23,13 @@
             <div class="project-grid">
                 <!-- Embed videos or link to projects -->
                 <figure>
+                    <iframe src="https://www.youtube.com/embed/irM58zWM8zs"> </iframe>
+                    <figcaption> Yogi Cup 2025 Hype Video (For Show) </figcaption>
+                </figure>
+                <figure>
                     <!-- Embed a local video -->
                     <video controls>
-                        <source src="7 Days Left Reel_FINAL_3.mp4" type="video/mp4">
+                        <source src="../assets/7 Days Left Reel_FINAL_3.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <figcaption>Yogi Cup Basketball Tournament 2024 Countdown Video</figcaption>
@@ -67,7 +38,7 @@
                 <figure>
                     <!-- Embed a local video -->
                     <video controls>
-                        <source src="48 Hours Until Tip-Off.mp4" type="video/mp4">
+                        <source src="../assets/48 Hours Until Tip-Off.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <figcaption>Yogi Cup Basketball Tournament 2024 Countdown Video</figcaption>
@@ -76,7 +47,7 @@
                 <figure>
                     <!-- Embed a local video -->
                     <video controls>
-                        <source src="Side.mp4" type="video/mp4">
+                        <source src="../assets/Side.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <figcaption>Kids Diwali Celebration Logo Splash</figcaption>
@@ -85,14 +56,10 @@
                 <figure>
                     <!-- Embed a local video -->
                     <video controls>
-                        <source src="Center-Diwali backdrop.mp4" type="video/mp4">
+                        <source src="../assets/Center-Diwali backdrop.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <figcaption> Diwali Celebration Center Screen Backdrop</figcaption>
-                </figure>
-                <figure>
-                    <iframe src="https://www.youtube.com/embed/irM58zWM8zs"> </iframe>
-                    <figcaption> Yogi Cup 2025 Hype Video (For Show) </figcaption>
                 </figure>
                 <figure>
                     <iframe src="https://www.youtube.com/embed/ESf2zpzrM4Q"> </iframe>

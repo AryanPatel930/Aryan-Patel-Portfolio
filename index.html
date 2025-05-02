@@ -6,110 +6,32 @@
     <title>Aryan's Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" href="Favicon.png" type="image/png">
-
+    <link rel="icon" href="assets/Favicon.png" type="image/png">
     <style>
-        body {
-            --primary-color: #ffffff;
-            --secondary-color: #ffffff;
-            --background-color: #000000;
-            background-color: var(--background-color);
-        }
-        
-        /* Header with its own background image */
-        header {
-            background-image: url('Header-image.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-            position: relative; /* Allows positioning the logo and icons */
-        }
-
-        /* Logo in the top-left corner */
-        .logo {
-            width: 100px;
-            height: auto;
-            position: absolute;
-            top: 20px; /* Adjust as needed */
-            left: 20px; /* Adjust as needed */
-        }
-        
-        /* Profile picture in the center, circular */
-        .profile-picture {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%; /* Makes the image a circle */
-            object-fit: cover; /* Ensures the image is properly cropped inside the circle */
-            display: block;
-            margin: 0 auto 20px auto; /* Center the profile picture */
-        }
-
-        /* Social Media Icons */
-        .social-icons {
-            position: absolute;
-            top: 20px; /* Adjust as needed */
-            right: 20px; /* Adjust as needed */
-        }
-
-        .social-icons a {
-            color: white;
-            font-size: 32px; /* Increased size of the icons */
-            margin: 0 15px; /* Increase space between icons */
-            transition: color 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            color: #c40606; /* Change color on hover */
-        }
-
-        /* Footer with a different background image */
-        footer {
-            background-image: url('Footer-Image.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: white;
-            padding: 2rem;
-        }
-
-        nav a {
-            color: var(--primary-color);
-        }
-        nav a:hover {
-            color: var(--secondary-color);
-        }
-        h2, h3 {
-            color: var(--secondary-color);
-        }
-        button {
-            background-color: var(--primary-color);
-            color: rgb(0, 0, 0);
-        }
-        button:hover {
-            background-color: #c40606;
-        }
-        figure img {
-            width: 100%;
-            border-radius: 8px;
-        }
-        footer a {
-            color: white;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
+    header {
+        background-image: url('assets/Header-image.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+        position: relative; /* Allows positioning the logo and icons */
+    }
     </style>
+
+    <link rel="stylesheet" href="css/index.css"></link>
 </head>
 <body>
     <header class="container-fluid">
         <!-- Logo in the top-left corner -->
-        <img src="Aryan-Logo-new.png" alt="Aryan's Logo" class="logo">
+        <a href="index.html"
+            class ="logo-link">
+            <img src="assets/Aryan-Logo-new.png" alt="Aryan's Logo" class="logo">
+        </a>
 
         <!-- Profile Picture in the center -->
-        <img src="AryanPatel-PFP.jpg" alt="Profile Picture" class="profile-picture"> <!-- Replace with your actual profile image URL -->
+        <img src="assets/AryanPatel-PFP.jpg" alt="Profile Picture" class="profile-picture"> <!-- Replace with your actual profile image URL -->
 
         <h1>Aryan Patel</h1>
         <p>Developer & Designer</p>
@@ -136,7 +58,7 @@
                 <h2>Welcome to Aryan's Portfolio</h2>
                 <h3>Web & Mobile Developer, Graphic Designer, and Video Editor</h3>
             </hgroup>
-            <p>I am a versatile developer and designer skilled in Python, C++, Java, and web development. With expertise in graphic design and video editing using tools like Photoshop, Illustrator, Premiere Pro, and After Effects, I showcase a unique blend of front-end development and creative design skills. Passionate about technology and visual arts, my portfolio highlights frontend, graphic design, and video editing projects.</p>
+            <p>I’m a creative and technically driven developer with experience in Python, C++, Java, JavaScript, TypeScript, SQL, HTML, CSS, React.js, and Flutter. I specialize in building responsive web and mobile applications with a focus on clean UI/UX design. I’m also skilled in design tools like Figma, Photoshop, Illustrator, Premiere Pro, and After Effects—bringing visual ideas to life through wireframing, prototyping, graphic design, and video editing. My portfolio reflects a multidisciplinary approach—blending software engineering with digital storytelling to solve real-world problems and create engaging user experiences.</p>
         </section>
         
         <section id="skills">
@@ -148,8 +70,16 @@
                 <li>Python</li>
                 <li>C++</li>
                 <li>Java</li>
-                <li>HTML & CSS</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
                 <li>React.js</li>
+                <li>Flutter</li>
+                <li>Dart</li>
+                <li>SQL</li>
+                <li>FireBase</li>
+                <li>TypeScript</li>
+                <li>Figma</li>
                 <li>Photoshop</li>
                 <li>Illustrator</li>
                 <li>Premiere Pro</li>
@@ -165,23 +95,23 @@
             <p>Explore some of my work in software development, graphic design, and video editing below.</p>
             <div class="grid">
                 <figure>
-                    <img src="solidpixels-TCBw4jAIJDY-unsplash.jpg" alt="Software/Front-End Projects">
-                    <figcaption><a href="software-projects.html">Software Development Projects</a></figcaption>
+                    <img src="assets/solidpixels-TCBw4jAIJDY-unsplash.jpg" alt="Software/Front-End Projects">
+                    <figcaption><a href="projects/software-projects.html">Software Development Projects</a></figcaption>
                 </figure>
                 <figure>
-                    <img src="moritz-kindler-xWga0cs8vSk-unsplash.jpg" alt="Graphic Design">
-                    <figcaption><a href="graphic-design.html">Graphic Design Projects</a></figcaption>
+                    <img src="assets/moritz-kindler-xWga0cs8vSk-unsplash.jpg" alt="Graphic Design">
+                    <figcaption><a href="projects/graphic-design.html">Graphic Design Projects</a></figcaption>
                 </figure>
                 <figure>
-                    <img src="nejc-soklic-2jTu7H9l6JA-unsplash.jpg" alt="Video Editing">
-                    <figcaption><a href="video-editing.html">Video Editing Projects</a></figcaption>
+                    <img src="assets/nejc-soklic-2jTu7H9l6JA-unsplash.jpg" alt="Video Editing">
+                    <figcaption><a href="projects/video-editing.html">Video Editing Projects</a></figcaption>
                 </figure>
             </div>
         </section>
     </main>
     
     <section id="contact" aria-label="Subscribe example">
-        <div class="container">
+        <div class="container-contact">
             <article>
                 <hgroup>
                     <h2>Contact Me</h2>

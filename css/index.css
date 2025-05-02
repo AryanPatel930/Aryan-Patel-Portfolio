@@ -1,0 +1,87 @@
+body {
+    --primary-color: #ffffff;
+    --secondary-color: #ffffff;
+    --background-color: #000000;
+    background-color: var(--background-color);
+}
+
+
+
+/* Logo in the top-left corner */
+.logo {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+}
+
+/* Profile picture in the center, circular */
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Makes the image a circle */
+    object-fit: cover; /* Ensures the image is properly cropped inside the circle */
+    display: block;
+    margin: 0 auto 20px auto; /* Center the profile picture */
+}
+
+/* Social Media Icons */
+.social-icons {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 32px; /* Increased size of the icons */
+    margin: 0 15px; /* Increase space between icons */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #c40606; /* Change color on hover */
+}
+
+/* Footer with a different background image */
+footer {
+    background-image: url('../assets/Footer-Image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 2rem;
+}
+
+nav a {
+    color: var(--primary-color);
+}
+nav a:hover {
+    color: var(--secondary-color);
+}
+h2, h3 {
+    color: var(--secondary-color);
+}
+button {
+    background-color: var(--primary-color);
+    color: rgb(0, 0, 0);
+}
+button:hover {
+    background-color: #c40606;
+}
+figure img {
+    width: 100%;
+    border-radius: 8px;
+}
+footer a {
+    color: white;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+.container-contact {
+    width: 100%;
+    height: auto;
+}

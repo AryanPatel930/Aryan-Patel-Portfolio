@@ -1,0 +1,37 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 400px;
+    margin: 0 auto 40px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #111;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide img {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 5px;
+    background-color: white;
+    border-radius: 6px;
+  }
+  
+  @media (max-width: 600px) {
+    .carousel-container {
+      height: 250px;
+    }
+  
+    .carousel-slide img {
+      padding: 2px;
+    }
+  }
+  
